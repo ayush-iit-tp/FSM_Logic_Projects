@@ -29,6 +29,12 @@ counter is a 32-bit register used to count clock cycles for timing.
         NS_RED_EW_YELLOW = 2'b11
     } state_t;
 
+/*
+The state_t concept in your Verilog code is an example of an enumerated type, 
+which is a user-defined data type that consists of a set of named values called enumerators.
+In Verilog, enumerated types are used to make state machines and other code more readable and maintainable.
+*/
+    
     state_t state, next_state;
     reg [31:0] counter; // Counter for timing
     
